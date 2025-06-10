@@ -1,0 +1,1 @@
+alert("Welcome to BookMark Manager - 1.0")
