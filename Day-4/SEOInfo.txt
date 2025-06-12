@@ -1,0 +1,21 @@
+CLS Cumulative Latout Shift:
+    Design Shift after full loading of a website
+    
+
+LCP Largest Contentful Paint:
+   Largest Pic Loading time
+   
+  
+
+FID First Input Delay:
+   Button press processing delay
+
+
+Lighthouse Mobile and Laptop Tool inspect analyzer
+
+Responsiveness
+
+meta decription and meta keyword tag (not mostly used today though)
+
+checkout web.dev for more info
+
