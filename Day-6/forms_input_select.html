@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Course TA-ship Form</h1>
+
+    <!-- get used to retrieve data, also used to send small data to server like request -->
+
+    <!-- post used to send large data to server  -->
+
+    <form action="post">
+
+        <div>
+            <label for="id1">Enter your name</label>
+            <input type="text" id="id1" name="username" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <!-- if gender same then only one can be selected at a time -->
+             <!-- name and value are sent to the server -->
+              <!-- input and label are connected by id and for respectively and if label is clicked, it corresponds to input  -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check" name="value" value="check">
+            <label for="check">Do You Belong to LGBTQ+ Squad?</label>
+        </div>
+
+        <div>
+            <!-- <br> -->
+             <div>
+                 <label for="txt">Enter something</label>
+
+             </div>
+             <!-- use div instead of br  -->
+            <!-- <br>
+            <br> -->
+            <textarea name="comment" id="txt" rows="4" cols="40"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="text" required>
+            <!-- required means compulsory -->
+            <input type="text" autofocus>
+            <!-- autofocus auto selects that input by default -->
+
+            <!-- will show validation error if more than one character and not the small alphabet -->
+            <input type="text" pattern="[a-z]">
+        </div>
+
+
+    </form>
+
+
+
+
+
+    
+</body>
+</html>
