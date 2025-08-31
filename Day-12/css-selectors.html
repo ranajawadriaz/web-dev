@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector  */
+        h3{
+            color: red;
+        }
+
+        /* class selector  */
+
+        .king{
+            background-color: red;
+        }
+
+        /* id selector  */
+
+        #odo{
+
+            background-color: aqua;
+
+        }
+
+        /* child selector, p if it is direct child of div  */
+
+        div > p{
+            color: rgb(118, 27, 27);
+        }
+
+        /* descendant selector, span if it is found anywhere inside div  */
+
+        div span{
+            background-color: rgb(166, 112, 42);
+        }
+
+        /* pseudo selectors */
+
+        /* a:active -> when it is clicked  */
+        /* a:link -> when a link is not visited  */
+
+        /* p:first-child -> if p is very first child of any parent and not applied if its the second child  */
+
+        /* follow lvha pattern in the pseudo selectors */
+
+
+        a:link{
+            color: greenyellow;
+        }
+
+        a:visited{
+            color: blueviolet;
+
+        }
+
+        a:hover{
+            background-color: red;
+        }
+
+        a:active{
+            color: white;
+        }
+
+        
+
+        p:first-child{
+            color: chocolate;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <p class="king">this is paragraph with class</p>
+
+    <div id="odo two">hi this is div with 2 ids</div>
+
+
+    <h3>this is heading level 3, element selector has been applied here</h3>
+
+    <a href="https://www.google.com">google</a>
+
+    <div>
+        <p>hi this is first child</p>
+    </div>
+    
+</body>
+</html>
