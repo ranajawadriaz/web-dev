@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS selectors</title>
     <style>
-        /* element selector  */
-        h3{
-            color: red;
-        }
+        /* css selectors to select specific css  */
+      /* element selector  */
+      h3 {
+        color: red;
+      }
 
-        /* class selector  */
+      /* class selector  */
 
-        .king{
-            background-color: red;
-        }
+      .king {
+        background-color: red;
+      }
 
-        /* id selector  */
+      /* id selector  */
 
-        #odo{
+      #odo {
+        background-color: aqua;
+      }
 
-            background-color: aqua;
+      /* child selector, p if it is direct child of div  */
 
-        }
+      div > p {
+        color: rgb(118, 27, 27);
+      }
 
-        /* child selector, p if it is direct child of div  */
+      /* descendant selector, span if it is found anywhere inside div  */
 
-        div > p{
-            color: rgb(118, 27, 27);
-        }
+      div span {
+        background-color: rgb(166, 112, 42);
+      }
 
-        /* descendant selector, span if it is found anywhere inside div  */
+      /* pseudo selectors */
 
-        div span{
-            background-color: rgb(166, 112, 42);
-        }
+      /* a:active -> when it is clicked  */
+      /* a:link -> when a link is not visited  */
 
-        /* pseudo selectors */
+      /* p:first-child -> if p is very first child of any parent and not applied if its the second child  */
 
-        /* a:active -> when it is clicked  */
-        /* a:link -> when a link is not visited  */
+      /* follow lvha pattern in the pseudo selectors, i.e: link, visited, hover, active */
 
-        /* p:first-child -> if p is very first child of any parent and not applied if its the second child  */
+      /* an element can have multiple classes but only allowed to have one class */
 
-        /* follow lvha pattern in the pseudo selectors */
+      a:link {
+        color: greenyellow;
+      }
 
+      a:visited {
+        color: blueviolet;
+      }
 
-        a:link{
-            color: greenyellow;
-        }
+      a:hover {
+        background-color: red;
+      }
 
-        a:visited{
-            color: blueviolet;
+      a:active {
+        color: white;
+      }
 
-        }
+      p:first-child {
+        color: chocolate;
+      }
 
-        a:hover{
-            background-color: red;
-        }
+      /* universal selector  */
 
-        a:active{
-            color: white;
-        }
-
-        
-
-        p:first-child{
-            color: chocolate;
-        }
-
-
-
-
-
+      *{
+        margin: 5px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <p class="king">this is paragraph with class</p>
 
-    <div id="odo two">hi this is div with 2 ids</div>
-
+    <div id="odo">hi this is div with 2 ids</div>
 
     <h3>this is heading level 3, element selector has been applied here</h3>
 
     <a href="https://www.google.com">google</a>
 
     <div>
-        <p>hi this is first child</p>
+      <p>hi this is first child</p>
     </div>
-    
-</body>
+
+    <div>
+        <div>
+            <span>this is span</span>
+        </div>
+    </div>
+
+    <div>
+        <h1>hi</h1>
+        <p>this is second child</p>
+    </div>
+  </body>
 </html>

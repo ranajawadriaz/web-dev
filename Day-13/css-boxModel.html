@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box model - Margin-border-padding-content</title>
+    <style>
+
+        /* if we write the height as 200px and without the box-sizing : borderbox property then the 200px would total be of the content height only, else 200px would be of total of content, padding and the border up and down height, here the margin is neglected or not included  */
+
+        /* also to calculate width of an element= width of content+left-right padding width +left right border width + left right margin width  */
+
+        /* also when 2 elements are side by side up and down with some margin then the margin between them would be the max of the two margins of those 2 elements, this is margin collapse and in this concept when 2 margins overlap then the max of those two margin is applied */
+
+        /* also all elements are boxes  */
+
+        /* an element can have multiple classes but not the ids */
+
+        /* you can see the margin-border-padding-content box in element-> computed while inspecting in the browser */
+
+        .box{
+            background-color: aqua;
+
+        }
+
+        .box1{
+            margin: 25px;
+            border: 7px solid black;
+            height: 200px;
+            box-sizing:border-box;
+            padding: 15px;
+
+        }
+
+        .box2{
+            margin: 25px;
+            border: 2px solid black;
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box box1">
+        hi this is div1
+    </div>
+
+    <div class="box box2">
+        hi this is div2
+    </div>
+
+
+    
+</body>
+</html>
