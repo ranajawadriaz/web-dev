@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonts</title>
+
+    <!-- link or import, both works -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet"> -->
+    <style>
+      /* single import  */
+
+      /* @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap'); */
+
+      /* multiple imports  */
+
+      @import url("https://fonts.googleapis.com/css2?family=Asimovian&family=Story+Script&display=swap");
+
+      /* body{
+    font-family: ;
+} */
+
+      .q {
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+
+        /* bold */
+        font-weight: 500;
+
+        /* for underline and overline  */
+        text-decoration: underline;
+        /* text-decoration: overline; */
+      }
+
+      .w {
+        font-family: "Story Script";
+        font-weight: 600;
+        font-size: 25px;
+        text-decoration: underline;
+      }
+
+      .e {
+        font-family: "Asimovian";
+        font-size: 25px;
+
+        /* line spacing  */
+        line-height: 3;
+
+
+        text-indent: 23px; /*space at start*/
+      }
+
+      .r {
+        font-size: 25px;
+        letter-spacing: 24px;/*spacing between letters*/
+        /* text-indent: 23px; */
+
+
+        text-align: center;
+      }
+
+      .t {
+        font-size: 25px;
+
+        /* first letter capital of each word  */
+        text-transform: capitalize;
+
+
+        text-decoration: underline;
+
+        /* underline color  */
+        text-decoration-color: red;
+
+        /* underline would be dotted  */
+        /* text-decoration-style: dotted; */
+
+        /* wavy underline  */
+
+    
+        text-decoration-style: wavy;
+
+        /* underline thickness  */
+        text-decoration-thickness: 6px;
+      }
+
+      .y {
+        border: 2px solid red;
+        font-size: 25px;
+
+        /* all letters lowercase */
+        text-transform: lowercase;
+
+        width: 150px;
+
+        /* if this is written words would be broken if limited by border  */
+        word-break: break-all;
+        
+      }
+
+      .u {
+        font-size: 24px;
+        border: 1px solid black;
+
+
+        /* these three properties are required for the overflow property  */
+        width: 26px;
+
+        /* by making the overflow hidden now the overflowing content would be dotted using the text overflow elipsis property  */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* text-overflow: clip; */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="q">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, doloribus!
+    </p>
+    <p class="w">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?
+    </p>
+    <p class="e">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+      voluptatibus mollitia ut sint iure quaerat ad placeat deserunt quia
+      excepturi ipsam officia vero, modi dolor itaque eveniet saepe nostrum
+      fugit quibusdam odit voluptate. Perspiciatis provident quo consequuntur
+      earum ullam eum possimus optio vel numquam? Minima.
+    </p>
+    <p class="r">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
+      obcaecati.
+    </p>
+    <p class="t">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugiat!
+    </p>
+    <p class="y">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+      voluptatem!
+    </p>
+    <p class="u">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+      necessitatibus?
+    </p>
+  </body>
+</html>
